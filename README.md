@@ -15,7 +15,7 @@ To train the iForest model as specified in the paper, run:
 python iforest.py train x.csv -y y.csv
 ```
 
-Where `x.csv` contains the features to be trained on and `y.csv` is a single column with true labels. See example files in data. 
+Where `x.csv` contains the features to be trained on and `y.csv` is a single column with true labels. See example files in data directory. 
 
 To train an improved version of the iForest model, run: 
 
@@ -23,11 +23,11 @@ To train an improved version of the iForest model, run:
 python iforest.py train x.csv -y y.csv -i 
 ```
 
-Additionally, the following parameters can be used with the iforest.py script: 
+Additionally, the following command-line arguments can be used with the iforest.py script: 
 - `t`: to specify the number of trees to build the iForest. The default is 300. 
 - `s`: to specify the sample size to build each isolation tree within. This also sets the height limit for each tree as well. The default value is 256 which has been suggested by the isolation forest paper. 
 - `i`: to run an improved version of the iforest algorithm. Fit times will increase slightly 
-- `n`: filename for saved models
+- `n`: filename for saved models, default is `fitted_iForest`
 
 ## Prediction 
 
