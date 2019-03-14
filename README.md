@@ -15,6 +15,8 @@ To train the iForest model as specified in the paper, run:
 python iforest.py train x.csv -y y.csv
 ```
 
+Where `x.csv` contains the features to be trained on and `y.csv` is a single column with true labels. See example files in data. 
+
 To train an improved version of the iForest model, run: 
 
 ```
@@ -42,3 +44,29 @@ python iforest.py predict x.csv -n model_name.pkl
 ```
 
 Predictions and scores will be saved in `/trained_model/model_name_predictions.csv`
+
+## Example Run 
+
+**Improved Training Run:**
+```
+python iforest.py train http_X.csv -Y http_Y.csv -i
+```
+
+**Output:**
+```
+INFO fit time 0.54s
+INFO 11940 total nodes in 300 trees
+INFO score time 1.08s
+300 trees at desired TPR 80.0% getting FPR 0.0072%
+Saving trained model to trained_model directory..
+```
+
+**Prediction:**
+```
+python iforest.py predict http_X.csv 
+```
+
+**Output:**
+```
+Saving predictions to trained_model/fitted_iForest_predictions.csv...
+```
