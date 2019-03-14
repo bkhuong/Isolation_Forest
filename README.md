@@ -4,7 +4,7 @@ Implementation of the Isolation Forest Algorithm following the paper by Fei Tony
 ## Getting Started 
 
 This repo is structured as follows: 
- - **data**: This is where the training and prediction data will be read from. Sample datasets have been provided. 
+ - **data**: This is where the training data will be read from. Sample datasets have been provided. 
  - **trained_model**: This is where the trained iForest model and predictions will be saved to. 
  - **iforest.py**: The main iForest script 
 
