@@ -12,13 +12,13 @@ This repo is structured as follows:
 
 To train the iForest model as specified in the paper, run:
 ```
-python iforest.py train x.csv y.csv
+python iforest.py train x.csv -y y.csv
 ```
 
-To train an iproved version of the iForest model, run: 
+To train an improved version of the iForest model, run: 
 
 ```
-python iforest.py train x.csv y.csv -i 
+python iforest.py train x.csv -y y.csv -i 
 ```
 
 Additionally, the following parameters can be used with the iforest.py script: 
@@ -40,3 +40,5 @@ If multiple pre-trained models exist, specify the filename:
 ```
 python iforest.py predict x.csv -n model_name.pkl
 ```
+
+Predictions and scores will be saved in `/trained_model/model_name_predictions.csv`
