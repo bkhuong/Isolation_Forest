@@ -1,5 +1,5 @@
 # Isolation_Forest
-Implementation of the Isolation Forest Algorithm following the paper by Fei Tony Liu, Kai Ming Ting, and Zhi-Hua Zhou. See original paper [here](https://github.com/bkhuong/Isolation_Forest/blob/master/IsolationForestPaper.pdf)
+My implementation of the Isolation Forest Algorithm following the paper by Fei Tony Liu, Kai Ming Ting, and Zhi-Hua Zhou. See original paper [here](https://github.com/bkhuong/Isolation_Forest/blob/master/IsolationForestPaper.pdf)
 
 ## Getting Started 
 
@@ -29,7 +29,7 @@ Additionally, the following command-line arguments can be used with the iforest.
 - `i`: to run an improved version of the iforest algorithm. Fit times will increase slightly 
 - `n`: filename for saved models, default is `fitted_iForest`
 
-## Prediction 
+### Prediction 
 
 To used a pre-trained iForest on new data, run: 
 
